@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <style>
+
+	.hako {
+		margin:auto;
+		margin-top: 100px;
+	}
+
+	.name1,.pas,.mail,.zyusyo,.age{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	input{
+		margin-right: 300px;
+		width: 400px;
+	}
+
+	p{
+		margin-left: 350px;
+	}
+
+	.sosin{
+		margin:auto;
+		margin-left: 590px;
+		margin-top: 50px;
+		margin-bottom: 100px;
+	}
+
+	button {
+ 		 width: 10em;
+  		height:3em;
+	}
+	
+
+	#asd,#asdf {
+  	width: 600px;
+  	height: 300px;
+	position: relative;
+	}
+
+
+	#swilesult, #swilesult2 {
+		text-align: center;
+	}
+	.qwe {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+	<div class="qwe">
+		<div>
+			<div class="swiper swiper1" id="asd">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide"><img src="./ai_dance_character.png" alt=""></div>
+				<div class="swiper-slide"><img src="./frog_budgett_kaeru.png" alt=""></div>
+				<div class="swiper-slide"><img src="./kodai_sacabambaspis.png" alt=""></div>
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+			
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
+			</div>
+			<div id="swilesult">スライド1を表示しています。</div>
+		</div>
+
+		<div>
+			<div class="swiper swiper2" id="asdf">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide"><img src="./pop_shinsyakaijin_ganbare.png" alt=""></div>
+				<div class="swiper-slide"><img src="./pop_shinsyakaijin_murisuruna.png" alt=""></div>
+				<div class="swiper-slide"><img src="./ofuro_message_mokuyoku_gokyouryoku_kudasai.png" alt=""></div>
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+			
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
+			</div>
+			<div id="swilesult2">スライド1を表示しています。</div>
+		</div>
+	</div>
+
+    <form class="hako" id="basic_form">
+		<div class="name1">
+			<p>名前</p>
+			<input  name="name" id="basic_name" type="text" placeholder="名前を入力してください" /></div>
+		<div class="mail">
+			<p>メールアドレス</p>
+			<input name="email" id="basic_email" type="text" placeholder="メールアドレスを入力してください" /></div>
+		<div class="pas">
+			<p>パスワード</p>
+			<input name="pas" id="basic_password" type="text" placeholder="パスワードを入力してください" /></div>
+		<div class="age">
+			<p>年齢</p>
+			<input name="age" id="basic_age" type="text" placeholder="あなたの年齢を入力してください" /></div>
+		<div class="zyusyo">
+			<p>住所</p>
+			<input name="zyusyo" id="basic_zyusyo" type="text" placeholder="あなたの住所を入力してください" /></div>	
+	<div class="sosin"><button type="submit">送信</button></div>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
