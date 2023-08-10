@@ -1,36 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    <meta charset="UTF-8">
+    <style>
+      .target {
+	width:100px;
+	height:100px;
+	margin:10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #01579B;
+	color:#FFF;
 }
-body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url('data:image/svg+xml;utf8,<svg opacity="0.15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="160" height="150"><g transform="translate(1 1)" stroke-width="2" stroke="%23ffc928" stroke-linecap="round" stroke-linejoin="round" fill="%23ffc928"><path d="M 0 4.5 l 4.5 0 l 2.5 -4.5 l 2.5 4.5 l 4.5 0 l -3.5 3.5 l 1.5 5 l -5 -2.5 l -5 2.5 l 1.5 -5 l -3.5 -3.5"></path></g></svg>'),
-    hsl(0, 0%, 96%);
-  background-size: 40px;
+.targeting {
+	width:100px;
+	height:100px;
+	margin:10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color:#FFF;
 }
-	</style>
+#container1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.go-ru {
+	margin-left: 730px;
+
+}
+    </style>
+    <title>Document</title>
 </head>
 <body>
-	<div id="elems">
-		<div class="box elem"><img src="./kodai_sacabambaspis.png" id="sacaban"></div>
-		<div class="box elem"><img src="./kodai_sacabambaspis.png" id="sacaban"></div>
-		<div class="box elem"><img src="./kodai_sacabambaspis.png" id="sacaban"></div>
-	    </div>
-	<canvas width="500" height="500"></canvas>
-	<button id="test">ボタン</button>
-	<input id="qwevalue">
+
+  <div id="dropArea" style="border: 2px dashed #ccc; padding: 20px; text-align: center;">
+    <p>画像ファイルをドラッグ＆ドロップまたは</p>
+    <input type="file" id="fileInput" style="display: none;">
+    <label for="fileInput">画像ファイルを選択</label>
+  </div>
+  <button id="btn1">1</button>
+  <button id="btn2">2</button>
+  <button id="btn3">3</button>
+  <button id="btn4">4</button>
+  <br>
+  <p class="go-ru">ゴール</p>
+  <p>スタート</p>
+
+  <div id="race">
+    <div id="target1" class="target">
+      <img src="" id="trg1" width="100px" height="100px" hidden>
+    </div>
+    <div id="target2" class="target">
+      <img src="" id="trg2" width="100px" height="100px" hidden>
+    </div>
+    <div id="target3" class="target">
+      <img src="" id="trg3" width="100px" height="100px" hidden>
+    </div>
+    <div id="target4" class="target">
+      <img src="" id="trg4" width="100px" height="100px" hidden>
+    </div>
+  </div>
+  <button id="start">start</button>
+  <button id="restart" hidden>restart</button>
+
 	<script src="app.js"></script>
 </body>
-
 </html>
